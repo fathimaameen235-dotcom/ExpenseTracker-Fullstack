@@ -1,9 +1,3 @@
-🔥 Nice bro — this is the step that actually makes your project look **job-ready**. I’ll give you a **clean, professional README** you can directly paste into GitHub.
-
----
-
-# 🚀 📄 Expense Tracker – Professional README
-
 md
 # 💰 Expense Tracker – Full Stack Web Application
 
