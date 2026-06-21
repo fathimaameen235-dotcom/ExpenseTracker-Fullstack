@@ -1,0 +1,75 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+.flattened-pom.xml
+
+# IDE
+.idea/
+*.iws
+*.iml
+*.ipr
+*.classpath
+*.project
+.settings/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Gradle
+.gradle/
+build/
+gradle/
+
+# Spring Boot
+application-local.properties
+application-*.properties
+log/
+logs/
+*.log
+
+# Java
+*.class
+*.jar
+*.war
+*.nar
+*.zip
+*.tar.gz
+*.rar
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+*.lst
+
+# Database
+.h2.db
+*.mv.db
+
+# OS
+*.exe
+*.dll
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Build
+bin/
+out/
+dist/
+
+# Custom
+.env
+.env.local
+*.bak

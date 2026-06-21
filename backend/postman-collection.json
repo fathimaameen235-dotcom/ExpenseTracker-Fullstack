@@ -1,0 +1,170 @@
+{
+  "info": {
+    "name": "Expense Tracker API",
+    "description": "Collection of API endpoints for Expense Tracker application",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/expenses/health",
+          "host": ["{{base_url}}"],
+          "path": ["api", "expenses", "health"]
+        },
+        "description": "Check if API is running"
+      }
+    },
+    {
+      "name": "Get All Expenses",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/expenses",
+          "host": ["{{base_url}}"],
+          "path": ["api", "expenses"]
+        },
+        "description": "Retrieve all expenses"
+      }
+    },
+    {
+      "name": "Get Expense by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/expenses/1",
+          "host": ["{{base_url}}"],
+          "path": ["api", "expenses", "1"]
+        },
+        "description": "Get a specific expense by ID"
+      }
+    },
+    {
+      "name": "Create Expense",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Grocery Shopping\",\n  \"amount\": 50.00,\n  \"category\": \"Food\",\n  \"date\": \"2024-06-21\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/expenses",
+          "host": ["{{base_url}}"],
+          "path": ["api", "expenses"]
+        },
+        "description": "Create a new expense"
+      }
+    },
+    {
+      "name": "Update Expense",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Updated Grocery\",\n  \"amount\": 60.00,\n  \"category\": \"Food\",\n  \"date\": \"2024-06-21\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/expenses/1",
+          "host": ["{{base_url}}"],
+          "path": ["api", "expenses", "1"]
+        },
+        "description": "Update an existing expense"
+      }
+    },
+    {
+      "name": "Delete Expense",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/expenses/1",
+          "host": ["{{base_url}}"],
+          "path": ["api", "expenses", "1"]
+        },
+        "description": "Delete an expense"
+      }
+    },
+    {
+      "name": "Get by Category",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/expenses/category/Food",
+          "host": ["{{base_url}}"],
+          "path": ["api", "expenses", "category", "Food"]
+        },
+        "description": "Get all expenses in a specific category"
+      }
+    },
+    {
+      "name": "Get by Date Range",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/expenses/date-range?startDate=2024-06-01&endDate=2024-06-30",
+          "host": ["{{base_url}}"],
+          "path": ["api", "expenses", "date-range"],
+          "query": [
+            {
+              "key": "startDate",
+              "value": "2024-06-01"
+            },
+            {
+              "key": "endDate",
+              "value": "2024-06-30"
+            }
+          ]
+        },
+        "description": "Get expenses within a date range"
+      }
+    },
+    {
+      "name": "Search by Title",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/expenses/search?title=grocery",
+          "host": ["{{base_url}}"],
+          "path": ["api", "expenses", "search"],
+          "query": [
+            {
+              "key": "title",
+              "value": "grocery"
+            }
+          ]
+        },
+        "description": "Search expenses by title (case-insensitive)"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8080",
+      "type": "string",
+      "description": "Base URL for the API"
+    }
+  ]
+}
