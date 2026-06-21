@@ -121,7 +121,7 @@ axios.get("http://localhost:8080/api/expenses")
 
 ## 📸 Screenshots
 
-> (<img width="1910" height="962" alt="Screenshot 2026-06-21 151515" src="https://github.com/user-attachments/assets/8f54bf41-82bc-485b-956b-19c64bcc5a60" />)
+> (<img width="1910" height="962" alt="Screenshot 2026-06-21 151515" src="https://github.com/user-attachments/assets/97b0ba0b-ab64-4841-bc8a-7aaa828937e5" />)
 
 
 
